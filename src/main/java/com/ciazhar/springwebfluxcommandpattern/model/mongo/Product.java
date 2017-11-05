@@ -20,4 +20,20 @@ public class Product {
     private String name;
     private Long price;
     private Integer stock;
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Long getPrice() {
+        return price;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
 }
