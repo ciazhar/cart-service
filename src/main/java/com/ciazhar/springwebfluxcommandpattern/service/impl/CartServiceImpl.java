@@ -25,7 +25,7 @@ public class CartServiceImpl implements CartService {
 
     @Override
     public Mono<Cart> createCart(CreateCartRequest request) {
-        Cart cart = new Cart(request.getCartId());
+        Cart cart = Cart.builder().id(request.getCartId()).build();
         return cartRepository.save(cart);
     }
 
