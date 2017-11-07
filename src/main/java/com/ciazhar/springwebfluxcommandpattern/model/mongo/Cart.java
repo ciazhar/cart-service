@@ -22,20 +22,6 @@ public class Cart {
     private String id;
     private List<CartItem> items = new ArrayList<>();
 
-    public Cart(String id, List<CartItem> items) {
-        this.id = id;
-        this.items = items;
-    }
-
-    public Cart(String cartId) {
-        this.items = new ArrayList<>();
-        this.id = cartId;
-    }
-
-    public String getId() {
-        return id;
-    }
-
     public List<CartItem> getItems() {
         if (items == null){
             new ArrayList<>();
