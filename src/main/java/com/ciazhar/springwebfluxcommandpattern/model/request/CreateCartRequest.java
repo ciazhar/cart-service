@@ -1,5 +1,6 @@
 package com.ciazhar.springwebfluxcommandpattern.model.request;
 
+import com.ciazhar.springwebfluxcommandpattern.validation.CartMustNotExists;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,6 +13,7 @@ import lombok.Data;
 @Data
 @Builder
 public class CreateCartRequest {
+    @CartMustNotExists
     private String cartId;
 
     public String getCartId() {
